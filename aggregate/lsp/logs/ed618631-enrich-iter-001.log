@@ -1,0 +1,30 @@
+[2026-11-22T12:54:15Z] === ENRICH ITERATION 1 START | repo=GREsau/schemars sha=ed618631 ===
+[2026-11-22T12:54:15Z] [iter=1] PHASE START: enrich repo=GREsau/schemars sha=ed618631 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ed618631-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ed6186319d5ebf1959a03f558df375d2bb5c44a6.nq.gz
+[2026-11-22T12:54:15Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-22T12:54:19Z] [iter=1] AST store loaded triples=464285 load_secs=4 mem_mb=760 MB
+[2026-11-22T12:54:19Z] [iter=1] Step 2: Finding LSP targets mem_mb=760 MB
+[2026-11-22T12:54:19Z] [iter=1] LSP targets found call_sites=3880 imports=170 extends=0 implements=89 secs=1
+[2026-11-22T12:54:20Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=760 MB
+[2026-11-22T12:54:23Z] [iter=1] Position index built positions=31759 nodes_with_types=37741 secs=3 mem_mb=760 MB
+[2026-11-22T12:54:23Z] [iter=1] Step 3: Starting LSP resolution mem_mb=760 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T12:54:23Z] [iter=1] Resolving target type target_type=call_site count=3880
+[2026-11-22T12:55:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=1 resolved=58 errors=0 current=schemars/tests/integration/remote_derive.rs
+[2026-11-22T12:55:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=4 resolved=429 errors=0 current=schemars/src/schema.rs
+[2026-11-22T12:56:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=8 resolved=958 errors=0 current=schemars/tests/integration/enums_ref_variants.rs
+[2026-11-22T12:56:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=12 resolved=1247 errors=0 current=schemars/tests/integration/attr_order.rs
+[2026-11-22T12:57:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.2 files_done=22 resolved=1685 errors=0 current=schemars/tests/integration/enums_untagged_variant.rs
+[2026-11-22T12:57:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.7 files_done=34 resolved=2036 errors=0 current=schemars/src/transform.rs
+[2026-11-22T12:58:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=40 resolved=2439 errors=0 current=schemars/tests/integration/extend.rs
+[2026-11-22T12:59:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.8 files_done=57 resolved=2681 errors=0 current=schemars_derive/src/name.rs
+[2026-11-22T12:59:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.3 files_done=88 resolved=2977 errors=0 current=docs/_includes/examples_v0/custom_settings.rs
+[2026-11-22T13:00:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=128 resolved=3077 errors=0 current=update-examples.sh
+[2026-11-22T13:01:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=130 resolved=3078 errors=0 current=docs/Gemfile
+[2026-11-22T13:01:27Z] [iter=1] Target type resolved target_type=call_site resolved=3078 errors=0 secs=424 mem_mb=760 MB
+[2026-11-22T13:01:27Z] [iter=1] Resolving target type target_type=import_statement count=170
+[2026-11-22T13:01:54Z] [iter=1] Target type resolved target_type=import_statement resolved=127 errors=0 secs=27 mem_mb=760 MB
+[2026-11-22T13:01:54Z] [iter=1] Resolving target type target_type=implements_clause count=89
+[2026-11-22T13:01:56Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=7.7 files_done=0 resolved=0 errors=0 current=schemars/src/generate.rs
+[2026-11-22T13:02:10Z] [iter=1] Target type resolved target_type=implements_clause resolved=86 errors=0 secs=15 mem_mb=760 MB
+[2026-11-22T13:06:16Z] [iter=1] Step 5: Writing final enrichment file triples=43917
+[2026-11-22T13:06:17Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/ed6186319d5ebf1959a03f558df375d2bb5c44a6.nq.gz size_kb=947
+[2026-11-22T13:06:17Z] [iter=1] PHASE END: enrich elapsed_s=722 elapsed_min=12.0 total_triples=43917

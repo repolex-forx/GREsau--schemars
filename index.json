@@ -1,0 +1,11 @@
+{
+  "org": "GREsau",
+  "repo": "schemars",
+  "versions": [
+    {
+      "commit": "ed6186319d5ebf1959a03f558df375d2bb5c44a6",
+      "tag": "v1.2.2",
+      "parsed_at": "2026-11-22T13:08:29.866525+00:00"
+    }
+  ]
+}
